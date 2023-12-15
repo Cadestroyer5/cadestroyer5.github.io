@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Style for h2 */
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #555555;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style for h3 */
+h3 {
+    font-family: 'Arial', sans-serif;
+    color: #777777;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imgscaledown {
+    width: var(--scale-width, 50%); /* Set the default width to 50% */
+    height: var(--scale-height, auto); /* Set the default height to auto */
+    /* You can adjust other properties as needed */
+}
+
+.image-container {
+    /*float: left; /* Align the container to the left */
+    display: inline-block;
+    margin-left: var(--scale-left,0px);
+    margin-top: auto;
+    margin-right: var(--scale-right,auto); /* Add margin for spacing */
+    overflow: hidden;
+    border: 2px solid black; /* Add a border around the container */
+    /*padding: 5px; /* Add padding inside the border */
+}
+.cropped-image {
+    width: 300px; /* Width of the image (larger than the container) */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: var(--scale-left,50px); /* Adjust to crop the desired portion */
+}
+.infoformat {
+    /*border: 1px solid #ccc; */
+    padding: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.infofromat h2 {
+    margin-top: 0;
+}
+
+.infoformat p {
+    margin: 5px 0;
+}
+.text-container {
+    display: inline-block;
+    margin-left: var(--scale-left,00px);
+    margin-top: auto;
+    margin-right:  var(--scale-left,1200px);
+    padding-bottom: var(--scale-height,0px);
+    padding-top: var(--scale-height,0px);
+    /*border: 2px solid black;*/
+}
+
+.bottom-right-box {
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    background-color:  #f0f0f0; 
+    padding: 100px; 
+}
+
+.return-to-top {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: grey; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+.return-to-top:hover {
+    background-color: black; 
+}
+.rightside-image {
+    position: fixed;
+    top: 10%; /* Adjust the value to position vertically */
+    right: 0;
+    transform: translateY(10%); /* Center vertically */
+    transform: translateX(40%);
+    max-width: 830px; /* Adjust as needed */
+}
